@@ -17,7 +17,7 @@ app.post("/chat", async (req, res) => {
       const response = await axios.post(
         "https://openrouter.ai/api/v1/chat/completions",
         {
-          model: "deepseek/deepseek-r1:free",
+          model: "deepseek/deepseek-r1-distill-qwen-1.5b",
           messages: messages,
         },
         {
