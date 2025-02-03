@@ -15,7 +15,7 @@ app.post("/chat", async (req, res) => {
     console.log("Received message:", messages);
 
     const response = await axios.post(
-      "https://api.groq.com/v1/chat/completions",
+      "https://api.groq.com/openai/v1/chat/completions",
       {
         model: "deepseek-r1-distill-llama-70b",
         messages: messages,
